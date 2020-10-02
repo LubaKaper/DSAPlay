@@ -4,5 +4,7 @@
         <page name='characterSet'/>
         <page name='Untitled Page'/>
         <page name='ArrayOfIntsSum'/>
+        <page name='largestMultiply3'/>
+        <page name='LemonadeChange'/>
     </pages>
 </playground>
