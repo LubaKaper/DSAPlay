@@ -7,5 +7,6 @@
         <page name='largestMultiply3'/>
         <page name='LemonadeChange'/>
         <page name='Matrix'/>
+        <page name='ShiftZeros'/>
     </pages>
 </playground>
