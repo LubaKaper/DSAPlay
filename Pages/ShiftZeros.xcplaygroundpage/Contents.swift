@@ -48,3 +48,27 @@ func shiftZerosInOut(_ arr: inout [Int]) -> ([Int], Int) {
 
 var array = [3,0,2,0,0,1,0,4]
 print(shiftZerosInOut(&array))
+
+
+func matchingNums(arr1: [Int], arr2: [Int]) -> [Int] {
+    var output = [Int]()
+    let set1 = Set(arr1)
+    let set2 = Set(arr2)
+    
+    for num in set1 {
+        if set2.contains(num) {
+            output.append(num)
+        }
+    }
+    return output
+}
+
+print(matchingNums(arr1: [1, 2, 3, 3, 4], arr2: [3, 4, 5]))
+
+var arrr = [1,1,2,2,3,3,3,4,4,4,4,5,5]
+var dict = [Int: Int]()
+
+for num in arrr {
+    dict[num] = (dict[num] ?? 0 ) + 1
+}
+print(dict)

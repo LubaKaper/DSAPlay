@@ -8,5 +8,7 @@
         <page name='LemonadeChange'/>
         <page name='Matrix'/>
         <page name='ShiftZeros'/>
+        <page name='TechnicalInterview'/>
+        <page name='BinarySearch'/>
     </pages>
 </playground>
