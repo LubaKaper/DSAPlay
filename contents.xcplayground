@@ -10,5 +10,6 @@
         <page name='ShiftZeros'/>
         <page name='TechnicalInterview'/>
         <page name='BinarySearch'/>
+        <page name='Set'/>
     </pages>
 </playground>
