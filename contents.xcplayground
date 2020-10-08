@@ -11,5 +11,7 @@
         <page name='TechnicalInterview'/>
         <page name='BinarySearch'/>
         <page name='Set'/>
+        <page name='ReverseAndAddFunction'/>
+        <page name='ProductOfThree'/>
     </pages>
 </playground>
