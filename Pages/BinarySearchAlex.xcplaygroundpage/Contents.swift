@@ -18,9 +18,30 @@ linearSearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 
 
 //Binary search O(log n) -> much faster then O(n)
-// Devide ond Conquer 
+// Devide ond Conquer
 
 func binarySearch(_ nums: [Int], _ target: Int) -> Int {
+    
+    var low = 0
+    var high = nums.count
+    
+    while low < high {
+        let middleIndex = low + (high - low) / 2
+        if nums[middleIndex] == target {
+            return middleIndex
+        } else if nums[middleIndex] > target { // look left
+            high = middleIndex
+        } else { // look right
+            low = middleIndex + 1
+        }
+    }
+    
+    return -1
+}
+
+// HAVE TO MAKE Comparable for operends to work
+
+func binarySearchGeneric<T: Comparable>(_ nums: [T], _ target: T) -> Int {
     
     var low = 0
     var high = nums.count

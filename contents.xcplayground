@@ -15,5 +15,6 @@
         <page name='ProductOfThree'/>
         <page name='Coins'/>
         <page name='SwapTwoInts'/>
+        <page name='BinarySearchAlex'/>
     </pages>
 </playground>
