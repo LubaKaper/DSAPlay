@@ -13,5 +13,7 @@
         <page name='Set'/>
         <page name='ReverseAndAddFunction'/>
         <page name='ProductOfThree'/>
+        <page name='Coins'/>
+        <page name='SwapTwoInts'/>
     </pages>
 </playground>
