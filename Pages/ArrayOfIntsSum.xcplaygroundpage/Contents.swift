@@ -10,6 +10,7 @@ import Foundation
 // return [0, 1]
 print("hi")
 
+// Inplace
 func sum(arr: [Int], target: Int ) -> [Int] {
   var result = [Int]()
 for each in 0...arr.count - 2 {
@@ -33,27 +34,29 @@ var tar = 9
 print( sum(arr: nums, target: tar))
 
 
-//func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-//    var indices = [Int]()
-////    var newTarget = Int()
-//    for j in 0..<nums.count {
-//        for i in 0..<nums.count where j != i {
-//          // 'where j != i' does't allow the the index to compare itself
-//            if nums[j] + nums[i] == target {
-//                print("\(nums[j]) + \(nums[i]) = \(target)")
-//                indices.append(j)
-//                indices.append(i)
-//                print(indices)
-//                return indices
-//            }
-//        }
-//    }
-//    return [0,0]
-//}
-//
-//let nums = [2,7,7,13,14]
-//let target = 200
-//// output: [0, 1]
-//print(twoSum(nums, target))
+func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    var indices = [Int]()
+//    var newTarget = Int()
+    for j in 0..<nums.count {
+        for i in 0..<nums.count where j != i {
+          // 'where j != i' does't allow the the index to compare itself
+            if nums[j] + nums[i] == target {
+                print("\(nums[j]) + \(nums[i]) = \(target)")
+                indices.append(j)
+                indices.append(i)
+                print(indices)
+                return indices
+            }
+        }
+    }
+    return [0,0]
+}
+
+let nums2 = [2,7,7,13,14]
+let target = 9
+// output: [0, 1]
+print(twoSum(nums2, target))
+
+
 var str = "jhfkwejh"
 //str.replacingOccurrences(of: <#T##StringProtocol#>, with: <#T##StringProtocol#>)

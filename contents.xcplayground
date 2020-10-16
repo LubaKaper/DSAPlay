@@ -16,5 +16,6 @@
         <page name='Coins'/>
         <page name='SwapTwoInts'/>
         <page name='BinarySearchAlex'/>
+        <page name='FirstBadVersion'/>
     </pages>
 </playground>
