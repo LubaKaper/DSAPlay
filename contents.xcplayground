@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='characterSet'/>
-        <page name='Untitled Page'/>
+        <page name='RemoveDuplicates'/>
         <page name='ArrayOfIntsSum'/>
         <page name='largestMultiply3'/>
         <page name='LemonadeChange'/>
@@ -17,5 +17,6 @@
         <page name='SwapTwoInts'/>
         <page name='BinarySearchAlex'/>
         <page name='FirstBadVersion'/>
+        <page name='BracketQuestion'/>
     </pages>
 </playground>
