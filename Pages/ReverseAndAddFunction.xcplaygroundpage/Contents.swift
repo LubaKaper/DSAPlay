@@ -72,3 +72,7 @@ func reverseAndAdd(num: Int)  {
 }
 
 reverseAndAdd(num: 196)
+
+var str = "hello world"
+
+print(str.capitalized)

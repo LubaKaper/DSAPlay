@@ -18,5 +18,6 @@
         <page name='BinarySearchAlex'/>
         <page name='FirstBadVersion'/>
         <page name='BracketQuestion'/>
+        <page name='Queue'/>
     </pages>
 </playground>
