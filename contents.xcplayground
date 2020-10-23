@@ -19,5 +19,6 @@
         <page name='FirstBadVersion'/>
         <page name='BracketQuestion'/>
         <page name='Queue'/>
+        <page name='SwapNodes'/>
     </pages>
 </playground>
