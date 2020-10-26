@@ -20,5 +20,6 @@
         <page name='BracketQuestion'/>
         <page name='Queue'/>
         <page name='SwapNodes'/>
+        <page name='MergeSort'/>
     </pages>
 </playground>
