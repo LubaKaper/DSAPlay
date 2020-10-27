@@ -21,5 +21,6 @@
         <page name='Queue'/>
         <page name='SwapNodes'/>
         <page name='MergeSort'/>
+        <page name='HashTAble'/>
     </pages>
 </playground>

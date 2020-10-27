@@ -29,7 +29,7 @@ func mergeSort(_ arr: [Int]) -> [Int] {
 
 // merge sorted array
 
-func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
+func merge(leftArr: [Int], rightArr: [Int]) -> [Int] { //O(n)
     var result = [Int]()
     var leftIndex = 0
     var rightIndex = 0
@@ -69,3 +69,5 @@ func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
 let result = mergeSort([-3, 5, 0, 5, 8, 4, 1])
 
 print(result)
+
+[8, -11].sorted() // O(nlogn)
