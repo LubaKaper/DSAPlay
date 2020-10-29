@@ -22,5 +22,7 @@
         <page name='SwapNodes'/>
         <page name='MergeSort'/>
         <page name='HashTAble'/>
+        <page name='Twitter'/>
+        <page name='anagrams'/>
     </pages>
 </playground>
