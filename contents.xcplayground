@@ -24,5 +24,6 @@
         <page name='HashTAble'/>
         <page name='anagrams'/>
         <page name='MatrixDiffects'/>
+        <page name='AlternatingCharacters'/>
     </pages>
 </playground>
