@@ -25,5 +25,6 @@
         <page name='anagrams'/>
         <page name='MatrixDiffects'/>
         <page name='AlternatingCharacters'/>
+        <page name='Dictionary'/>
     </pages>
 </playground>
