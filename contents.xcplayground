@@ -26,5 +26,6 @@
         <page name='MatrixDiffects'/>
         <page name='AlternatingCharacters'/>
         <page name='Dictionary'/>
+        <page name='insertionSort'/>
     </pages>
 </playground>
