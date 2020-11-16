@@ -27,5 +27,9 @@
         <page name='AlternatingCharacters'/>
         <page name='Dictionary'/>
         <page name='insertionSort'/>
+        <page name='QuickSort'/>
+        <page name='bestPros'/>
+        <page name='categorySuggestion'/>
+        <page name='BinaryTree'/>
     </pages>
 </playground>
