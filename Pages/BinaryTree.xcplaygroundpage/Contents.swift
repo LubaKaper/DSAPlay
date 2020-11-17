@@ -113,3 +113,64 @@ elevenNode.rightChild = thirtyNode
 fourNode.rightChild = sixNode
 
 breadthFirstTraversal(rootNode)
+
+
+// write a function to traverse a binary tree in-order recursively
+// in-order: left, root, right
+
+func inOrderraversal<T>(_ rootNode: BinaryTreeNode<T>?) {
+    //1. visit left
+    if let leftChild = rootNode?.leftChild {
+        inOrderraversal(leftChild)
+    }
+    //2. print root
+    if let root = rootNode {
+        print(root.value)
+    }
+    //3. visit right
+    if let rightChild = rootNode?.rightChild {
+        inOrderraversal(rightChild)
+    }
+}
+
+/*
+        8
+      /   \
+     11    4
+    /  \    \
+   7   30    6
+*/
+
+inOrderraversal(rootNode)
+
+// post-order traversal: left, right, root
+
+func postOrderTraversal<T>(_ rootNode: BinaryTreeNode<T>?) {
+    
+    if let leftChild = rootNode?.leftChild {
+        postOrderTraversal(leftChild)
+    }
+    if let rightChild = rootNode?.rightChild {
+        postOrderTraversal(rightChild)
+    }
+    if let root = rootNode {
+        print(root.value)
+    }
+}
+
+postOrderTraversal(rootNode)
+
+
+func preOrderTraversal<T>(_ rootNode: BinaryTreeNode<T>?) {
+    if let root = rootNode {
+        print("pre:\(root.value)")
+    }
+    
+    if let leftChild = rootNode?.leftChild {
+        preOrderTraversal(leftChild)
+    }
+    if let rightChild = rootNode?.rightChild {
+        preOrderTraversal(rightChild)
+    }
+}
+preOrderTraversal(rootNode)
