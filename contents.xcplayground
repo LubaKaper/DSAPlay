@@ -31,5 +31,6 @@
         <page name='bestPros'/>
         <page name='categorySuggestion'/>
         <page name='BinaryTree'/>
+        <page name='BinarySearchTree'/>
     </pages>
 </playground>

@@ -118,7 +118,7 @@ breadthFirstTraversal(rootNode)
 // write a function to traverse a binary tree in-order recursively
 // in-order: left, root, right
 
-func inOrderraversal<T>(_ rootNode: BinaryTreeNode<T>?) {
+func inOrderraversal<T>(_ rootNode: BinaryTreeNode<T>?)  {
     //1. visit left
     if let leftChild = rootNode?.leftChild {
         inOrderraversal(leftChild)
