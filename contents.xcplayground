@@ -32,5 +32,6 @@
         <page name='categorySuggestion'/>
         <page name='BinaryTree'/>
         <page name='BinarySearchTree'/>
+        <page name='HigherOrderFunctions'/>
     </pages>
 </playground>
