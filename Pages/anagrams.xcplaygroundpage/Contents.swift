@@ -9,11 +9,11 @@ import Foundation
 func funWithAnagrams(text: [String]) -> [String] {
     var output = [String]()
     //var pointer = 0
-    for word in text {
+    for word in text {// text: ["code","aaagmnrs","anagrams","doce"]
         for i in 0..<text.count {
             if word != text[i] && !output.contains(word) {
                 if compare(str1: word, str2: text[i]) {
-                    output.append(text[i])
+                    output.append(text[i])//output:"doce","anagrams"
                     
                 }
             }
@@ -42,6 +42,27 @@ print(compare(str1: "aabb", str2: "bbaa"))
 
 // map, compact map?
 
+
+
+
+
+
+func funWithAnagrams2(text: [String]) -> [String] {
+    var remove = [String]()
+    
+    for word in text {
+        for i in 0..<text.count {
+            if word != text[i] && !remove.contains(word) {
+                if compare(str1: word, str2: text[i]) {
+                    remove.append(text[i])
+                }
+            }
+        }
+    }
+    let output = Array(Set(text.filter { !remove.contains($0)})).sorted()
+    
+    return output
+}
 
 
 

@@ -39,3 +39,51 @@ print(booleanValues)
 let values2 = [3, 1, 4, 2]
 let filteredValues = values2.filter { $0 > 2 }
 print(filteredValues)
+
+
+ // .sorted
+// compares and sorts elemenents a sequence using a given predicate.
+
+//let values2 = [3, 1, 4, 2]
+let sortedValues = values2.sorted { $0 > $1 }
+print(sortedValues)
+
+
+  //  .flatMap
+//concatenates the elements of a given sequence
+
+// let values = [1,2,3,4,5]
+let mappedValue = values.map { Array(repeating: $0, count: $0) }
+print(mappedValue) // [[1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]
+
+// if we do not want an array of arrays like `map` gave us then we use `flatMap` as below
+// `flatMap` will flatten the transformed results into one sequence by concatenated each result
+let concatenatedValues = values.flatMap { Array(repeating: $0, count: $0) }
+print(concatenatedValues) // [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+let cities =  Set([["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]])
+let flattenedCites = cities.flatMap { $0 }
+print(flattenedCites) // ["Lima", "Sao Paulo", "New York", "Lima", "London", "New York"]
+
+
+//Write a function called multiples(of:in) that takes in an array of Ints and returns all of the Ints that are a multiple of a given number n. Use filter in your function.
+func multiplesOf(_ num: Int, _ arr: [Int]) -> [Int] {
+   // var copy = arr
+    let output = arr.filter { $0 % num == 0 }
+    return output
+    
+}
+
+print(multiplesOf(3, [1, 2, 3, 4, 6, 8, 9, 3, 12, 11]))
+
+
+//Write a function called largestValue(in:) that finds the largest Int in an array of Ints. Use reduce to solve this exercise.
+
+func largestValue(_ arr: [Int]) -> Int {
+    arr.reduce(Int.min) { (currentResult, currentValue) -> Int in
+        if currentValue > currentResult {
+            return currentValue
+        }
+        return currentResult
+    }
+}

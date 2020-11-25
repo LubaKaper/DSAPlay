@@ -33,5 +33,6 @@
         <page name='BinaryTree'/>
         <page name='BinarySearchTree'/>
         <page name='HigherOrderFunctions'/>
+        <page name='PhoneNumber'/>
     </pages>
 </playground>
