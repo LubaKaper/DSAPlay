@@ -34,5 +34,8 @@
         <page name='BinarySearchTree'/>
         <page name='HigherOrderFunctions'/>
         <page name='PhoneNumber'/>
+        <page name='ProjectEuler'/>
+        <page name='LinkedList'/>
+        <page name='ValidParethesis'/>
     </pages>
 </playground>

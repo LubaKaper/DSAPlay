@@ -108,6 +108,45 @@ func search(_ treeNode: BinaryTreeNode?, _ value: Int) -> Bool {
     return false // value does not exist in a tree
 }
 
+func delete(_ root: BinaryTreeNode?, _ value: Int) -> BinaryTreeNode? {
+    //1. if the tree is empty
+    guard let root = root else { return nil }
+    
+    //2. recursively call left subtree
+    if value < root.value { // go left
+        root.leftChild = delete(root.leftChild, value)
+        
+    }
+    //3
+    else if value > root.value { // go right
+        root.rightChild = delete(root.rightChild, value)
+    }
+    
+    //4.
+    else {
+        //5 - one child
+        if root.leftChild == nil {
+            return root.rightChild
+        } else if root.rightChild == nil {
+            return root.leftChild
+        }
+        
+        // 6.
+        // 6A. - copy minimum value of the right subtree to the root
+        root.value = minValue(root.rightChild)
+        //6B. - delete minimum node from the right subtree
+        root.rightChild = delete(root.rightChild, value)
+    }
+    return root
+}
+
+func minValue(_ root: BinaryTreeNode?) -> Int {
+    if root?.leftChild != nil {
+        return root?.value ?? 0
+    }
+    return minValue(root?.leftChild)
+}
+
 // write a func to return max height or depth of a binary tree
 
 /*
@@ -163,6 +202,10 @@ inOrderTraversal(rootNode) // 5 7 9 10 11 13 16
 search(rootNode, 6)
 
 maxHeight(rootNode)
+delete(rootNode, 5)
+delete(rootNode, 20)
+print(inOrderTraversal(rootNode))
+
 
 // Not Balanced Binary Search Tree
 // Write  function to chech if BST id Balanced

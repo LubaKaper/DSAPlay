@@ -22,3 +22,11 @@ print(phoneNumber("75yytur998nn434"))
 var str = "1234"
 var arr = Array(str)
 print(arr)
+
+func areSame(_ a: Int, _ b: Int) -> Bool{
+    if a - b == 0 {
+        return true
+    }
+    return false
+}
+areSame(2, 2)
