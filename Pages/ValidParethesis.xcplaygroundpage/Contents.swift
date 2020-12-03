@@ -77,3 +77,5 @@ var nums = [1,4,5,6,3,3,6,1,1,4]
 
 let mappedItems = nums.map { ($0, 1) }
 print(mappedItems)
+
+max(1,2,3)

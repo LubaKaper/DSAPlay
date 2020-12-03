@@ -37,5 +37,7 @@
         <page name='ProjectEuler'/>
         <page name='LinkedList'/>
         <page name='ValidParethesis'/>
+        <page name='PalindromeCount'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>
