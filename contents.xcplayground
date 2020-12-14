@@ -39,5 +39,6 @@
         <page name='ValidParethesis'/>
         <page name='PalindromeCount'/>
         <page name='Untitled Page'/>
+        <page name='Heaps'/>
     </pages>
 </playground>
