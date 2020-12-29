@@ -40,5 +40,6 @@
         <page name='PalindromeCount'/>
         <page name='Untitled Page'/>
         <page name='Heaps'/>
+        <page name='FlipImage'/>
     </pages>
 </playground>
