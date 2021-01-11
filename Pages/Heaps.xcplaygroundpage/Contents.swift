@@ -140,6 +140,66 @@ struct Heap {
     // in the appropriate position
     nodes[childIndex] = child // new child inserted
   }
+    // always removes the top node
+    mutating func remove() -> Int? {
+        guard !nodes.isEmpty else { return nil }
+        // if the Heap has only one child , remove and return the node
+        if nodes.count == 1 {
+            return nodes.removeLast()
+        }
+        
+        // if multiple nodes exist
+        let removedValue = nodes[0]// first value or top value
+        
+        nodes[0] = nodes.removeLast() // remove the last value and insert into the first position
+        
+        shiftDown(from: 0, to: nodes.count)
+        
+        // heapify the Heap, to make sure the Heap Property is satisfy
+        return removedValue
+        
+    }
+    
+    mutating func shiftDown(from index: Int, to endIndex: Int) {
+        let leftChildIndex = self.leftChildIndex(index)
+        let rightChildIndex = self.rightChildIndex(index)
+        
+        var currentIndex = index // in this case starts from 0 or the top of the Heap
+        if leftChildIndex < endIndex && nodes[leftChildIndex] < nodes[currentIndex] {
+            currentIndex = leftChildIndex
+        }
+        if rightChildIndex < endIndex && nodes[rightChildIndex] < nodes[currentIndex] {
+            currentIndex = rightChildIndex
+        }
+        
+        if currentIndex == index {
+            return// exit
+        }
+        
+        // otherwise we need to swap indices: currentIndex swap will take place
+        
+        nodes.swapAt(currentIndex, index) // swap indices in place, runtime is constant O(1)
+        
+        shiftDown(from: currentIndex, to: endIndex)
+    }
+    
+    /*
+     step 1
+            -6 (remove top element)
+          /    \
+         2      21
+        / \    /  \
+       8  16  30   36
+      /
+     10
+   step 2
+     10 (put last element instead)
+   /    \
+  2      21
+ / \    /  \
+8  16  30   36
+
+   */
 }
 
 /*
@@ -184,6 +244,12 @@ print(minHeap.peek() ?? -999) // -6
 print(minHeap.leftChild(0) ?? -999) // 2
 print(minHeap.rightChild(0) ?? -999) // 21
 
+
+// test remove
+
+print(minHeap.remove() ?? -999) // -6
+
+print(minHeap.peek() ?? -999) // 2
 
 // Preview
 // +
